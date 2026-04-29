@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple Weather App</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Weather App</h1>
+
+      <div class="search-box">
+        <input type="text" id="cityInput" placeholder="Enter city name..." />
+        <button onclick="searchCity()">Search</button>
+      </div>
+
+      <div id="loading" class="loading">Loading...</div>
+
+      <div id="weather" class="weather-box" style="display: none">
+        <h2 id="cityName"></h2>
+
+        <div class="days-container">
+          <div class="day-card">
+            <div class="day-title">Today</div>
+            <div class="date" id="dateDisplay0"></div>
+            <div class="weather-main">
+              <div class="temp" id="temperature0">--°C</div>
+              <div class="condition" id="condition0">--</div>
+            </div>
+            <div class="weather-details">
+              <div>
+                <span class="label">Max:</span>
+                <span id="tempMax0">--°C</span>
+              </div>
+              <div>
+                <span class="label">Min:</span>
+                <span id="tempMin0">--°C</span>
+              </div>
+              <div>
+                <span class="label">Rain:</span>
+                <span id="rain0">--%</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="day-card">
+            <div class="day-title">Tomorrow</div>
+            <div class="date" id="dateDisplay1"></div>
+            <div class="weather-main">
+              <div class="temp" id="temperature1">--°C</div>
+              <div class="condition" id="condition1">--</div>
+            </div>
+            <div class="weather-details">
+              <div>
+                <span class="label">Max:</span>
+                <span id="tempMax1">--°C</span>
+              </div>
+              <div>
+                <span class="label">Min:</span>
+                <span id="tempMin1">--°C</span>
+              </div>
+              <div>
+                <span class="label">Rain:</span>
+                <span id="rain1">--%</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="day-card">
+            <div class="day-title">Day After</div>
+            <div class="date" id="dateDisplay2"></div>
+            <div class="weather-main">
+              <div class="temp" id="temperature2">--°C</div>
+              <div class="condition" id="condition2">--</div>
+            </div>
+            <div class="weather-details">
+              <div>
+                <span class="label">Max:</span>
+                <span id="tempMax2">--°C</span>
+              </div>
+              <div>
+                <span class="label">Min:</span>
+                <span id="tempMin2">--°C</span>
+              </div>
+              <div>
+                <span class="label">Rain:</span>
+                <span id="rain2">--%</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="error" class="error" style="display: none"></div>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
